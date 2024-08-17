@@ -1,4 +1,4 @@
-class Libary {
+public class Library {
     static class Book {
         String title;
         String author;
@@ -15,13 +15,13 @@ class Libary {
 
     static void displayBooks() {
         Book book1 = new Book("1984", "George Orwell");
-        Book book2 = nwBook("To Kill a ockingbird", 
-    
+        Book book2 = new Book("To Kill a Mockingbird", "Harper Lee");
+
         book1.display();
         book2.display();
     }
-    
 
-    displayBooks();
+    public static void main(String[] args) {
+        displayBooks();
     }
 }
