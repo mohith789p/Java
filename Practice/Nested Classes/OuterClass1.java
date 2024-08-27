@@ -1,4 +1,4 @@
-class OuterClass {
+class OuterClass1 {
     static class StaticNestedClass {
         void display() {
             System.out.println("Inside Static Nested Class");
