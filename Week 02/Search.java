@@ -1,17 +1,15 @@
 import java.util.*;
 
 public class Search {
-	public static int binarySearch(int a[], int n, int key) {
-		int low = 0;
-		int high = n - 1;
+	public static int binarySearch(int[] a, int low, int high, int key) {
 		while (low <= high) {
 			int mid = (low + high) / 2;
 			if (a[mid] == key)
 				return mid;
 			else if (a[mid] < key)
-				high = mid - 1;
-			else
 				low = mid + 1;
+			else
+				high = mid - 1;
 		}
 		return -1;
 	}
@@ -20,20 +18,24 @@ public class Search {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the number of elements in the array: ");
 		int n = sc.nextInt();
-		int arr[] = new int[n];
+		int[] arr = new int[n];
+
 		System.out.println("Enter the elements: ");
-		int i;
-		for (i = 0; i < n; i++) {
+		for (int i = 0; i < n; i++) {
 			arr[i] = sc.nextInt();
 		}
+		Arrays.sort(arr);
+
 		System.out.println("Enter the key: ");
 		int key = sc.nextInt();
-		;
-		int pos = binarySearch(arr, n, key);
+
+		int pos = binarySearch(arr, 0, n - 1, key);
+
 		if (pos == -1)
-			System.out.println("key is not found.");
+			System.out.println("Key is not found.");
 		else
-			System.out.println("key is found at " + pos);
+			System.out.println("Key is found at index " + pos);
+
 		sc.close();
 	}
 }
