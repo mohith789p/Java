@@ -1,84 +1,66 @@
-/* Program on Multi Level Inheritance */
-
 import java.util.*;
 
 // super class
-class Person {
-	String id;
+class Animal {
 	String name;
 
-	Person(String name, String id) {
+	Animal(String name) {
 		this.name = name;
-		this.id = id;
-	}
-
-	void attend() {
-		System.out.println(name + " is present.");
-	}
-
-	void interval() {
-		System.out.println(name + " taken break.");
 	}
 
 	void eat() {
-		System.out.println(name + " having Lunch.");
+		System.out.println(name + " is eating.");
+	}
+
+	void sleep() {
+		System.out.println(name + " is sleeping.");
 	}
 }
 
-// sub class 1
-class Student extends Person {
-	int fee;
+// mid class
+class DomesticAnimal extends Animal {
+	String owner;
 
-	Student(String name, String id, int fee) {
-		super(name, id);
-		this.fee = fee;
+	DomesticAnimal(String name, String owner) {
+		super(name);
+		this.owner = owner;
 	}
 
-	void payFee(int money) {
-		fee -= money;
-		System.out.println("Amount " + money + " paid sucessfully.");
+	String getOwnerName() {
+		return owner;
 	}
 
-	void balanceFee() {
-		System.out.println(" Amount to pay: " + fee);
+	void play() {
+		System.out.println(name + " is playing with " + owner + ".");
 	}
 }
 
-// sub class 2
-class Faculty extends Person {
-	int salary;
+// sub class
+class Dog extends DomesticAnimal {
 
-	Faculty(String name, String id, int salary) {
-		super(name, id);
-		this.salary = salary;
+	Dog(String name, String owner) {
+		super(name, owner);
 	}
 
-	void getSalary() {
-		System.out.println("Salary (" + salary + ") is credited into your account.");
+	void bark() {
+		System.out.println(name + " is barking.");
 	}
-
 }
 
 public class MultiLevelInheritance {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter student name,id,fee: ");
-		String name = sc.next();
-		String id = sc.next();
-		int fee = sc.nextInt();
-		Student st = new Student(name, id, fee);
-		st.attend();
-		st.payFee(1000);
-		st.balanceFee();
-		st.eat();
-		System.out.print("Enter faculty name,id,salary: ");
-		String fname = sc.next();
-		String fid = sc.next();
-		int sal = sc.nextInt();
-		Faculty fac = new Faculty(fname, fid, sal);
-		fac.attend();
-		fac.eat();
-		fac.getSalary();
+
+		Dog myDog = new Dog("Charlie", "Kartheek");
+
+		myDog.eat();
+		myDog.sleep();
+
+		System.out.println("Owner: " + myDog.getOwnerName());
+
+		myDog.bark();
+		myDog.play();
+
 		sc.close();
 	}
 }
