@@ -29,7 +29,9 @@ class Employee extends Person{
 
 public class InheritanceEmployee{
     public static void main(String[] args){
+        Person p = new Person("Rahul", 20);
         Employee emp = new Employee("Bode", 24,70000);
+        p.display();
         emp.display();
     }
 }
