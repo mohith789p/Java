@@ -21,6 +21,7 @@ class Employee extends Person{
     }
 
     // override
+    @Override
     void display(){
         System.out.println("Name: " + name + "\nAge: " + age + "\nSalary: " + salary);
     }
