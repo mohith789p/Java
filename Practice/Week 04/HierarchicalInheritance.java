@@ -1,8 +1,6 @@
 abstract class Shape {
 
-    double getArea(){
-        return 0;
-    };
+    abstract double getArea();
 }
 
 class Rectangle extends Shape{
