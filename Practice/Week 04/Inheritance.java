@@ -6,7 +6,7 @@ class Vehicle {
 }
 
 class Car extends Vehicle{
-
+    // override
     void start(){
         System.out.println("Car Started");
     }
