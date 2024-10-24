@@ -17,7 +17,7 @@ public class QuadraticRoots2 {
         // Checking the nature of the roots
         if (D > 0) {
             // ax2 + bx = 0 => ( x = 0) or (ax + b = 0)
-            double root1 = -b / (2 * a);
+            double root1 = -b / a;
             double root2 = 0;
             System.out.println("Roots are real and distinct.");
             System.out.println("Root 1: " + root1);
