@@ -24,7 +24,7 @@ public class QuadraticRoots2 {
             System.out.println("Root 2: " + root2);
         } else if (D == 0) {
             // repeated root
-            double root = -b / (2 * a);
+            double root = 0;
             System.out.println("Roots are real and equal.");
             System.out.println("Root: " + root);
         } else {
