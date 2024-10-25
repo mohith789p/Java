@@ -16,7 +16,7 @@ public class UserDefinedException {
                 System.out.println("Eligible to vote.");
             }
         } catch (AgeException e) {
-            System.out.println("Exception caught: " + e.getMessage());
+            System.out.println(e);
         }
     }
 }
