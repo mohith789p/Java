@@ -1,0 +1,427 @@
+/* Primitive Data Types */
+public class DataTypes {
+    static byte data_byte;
+    static short data_short;
+    static int data_int;
+    static float data_float;
+    static double data_double;
+    static long data_long;
+    static boolean data_boolean;
+    static char data_char;
+
+    public static void main(String[] args) {
+
+        System.out.println("byte: " + data_byte);
+        System.out.println("short: " + data_short);
+        System.out.println("int: " + data_int);
+        System.out.println("float: " + data_float);
+        System.out.println("double: " + data_double);
+        System.out.println("long: " + data_long);
+        System.out.println("boolean: " + data_boolean);
+        System.out.println("char: " + data_char);
+    }
+}
+
+/* Quadratic Roots */
+
+public class QuadraticRoots {
+    public static void main(String[] args) {
+        double a, b;
+        a = 2;
+        b = 5;
+        double D = b * b;
+        if (D > 0) {
+            double root1 = -b / a;
+            double root2 = 0;
+            System.out.println("Roots are real and distinct.");
+            System.out.println("Root 1: " + root1);
+            System.out.println("Root 2: " + root2);
+        } else {
+            double root = 0;
+            System.out.println("Roots are real and equal.");
+            System.out.println("Root: " + root);
+        }
+    }
+}
+
+/* Binary Search */
+
+public class BinarySearch {
+    public static void main(String[] args) {
+        int[] num = { 2, 5, 8, 12, 16, 23, 38, 45, 56, 72, 91 };
+        int key = 23;
+        int pos = binarySearch(num, key);
+
+        if (pos != -1) {
+            System.out.println("Element found at index: " + pos);
+        } else {
+            System.out.println("Element not found.");
+        }
+    }
+
+    public static int binarySearch(int[] arr, int key) {
+        int low = 0;
+        int high = arr.length - 1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+
+            if (arr[mid] == key) {
+                return mid;
+            } else if (arr[mid] < key) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+        return -1;
+    }
+}
+
+/* Bubble Sort */
+
+public class BubbleSort {
+    public static void main(String[] args) {
+        int[] arr = { 64, 34, 25, 12, 22, 11, 90 };
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+}
+
+/* String Buffer */
+
+public class Buffer {
+    public static void main(String[] args) {
+        StringBuffer stringBuffer = new StringBuffer("Hello World");
+        System.out.println("Original: " + stringBuffer);
+        stringBuffer.delete(5, 12);
+        System.out.println("After deletion: " + stringBuffer);
+        stringBuffer.insert(5, "!");
+        System.out.println("After insertion: " + stringBuffer);
+    }
+}
+
+/* Class Mechanism */
+
+class Sum {
+    int add(int a, int b) {
+        return a + b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Sum total = new Sum();
+        int result = total.add(5, 10);
+        System.out.println("Sum: " + result);
+    }
+}
+
+/* Method Overloading */
+
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator cal = new Calculator();
+        System.out.println("Sum of 5 and 10: " + cal.add(5, 10));
+        System.out.println("Sum of 5, 10 and 15: " + cal.add(5, 10, 15));
+    }
+}
+
+/* Constructor  */
+
+class Greeting {
+    String name;
+    Greeting() {
+        this.name = "hari";
+    }
+    void display() {
+        System.out.println("Name: " + name);
+    }
+}
+
+public class Over {
+    public static void main(String[] args) {
+        Greeting obj = new Greeting();
+        obj.display();
+    }
+}
+
+/* Constructor Overloading */
+
+class Greeting {
+    String name;
+    Greeting() {
+        this.name = "hari";
+    }
+    Greeting(String name) {
+        this.name = name;
+    }
+    void display() {
+        System.out.println("Name: " + name);
+    }
+}
+
+public class Over {
+    public static void main(String[] args) {
+        Greeting obj = new Greeting();
+        obj.display();
+    }
+}
+
+/* Single Inheritance */
+
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating.");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.eat();
+        myDog.bark();
+    }
+}
+
+/* Multilevel Inheritance */
+
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating.");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking.");
+    }
+}
+
+class Puppy extends Dog {
+    void weep() {
+        System.out.println("Puppy is weeping.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Puppy myPuppy = new Puppy();
+        myPuppy.eat();
+        myPuppy.bark();
+        myPuppy.weep();
+    }
+}
+
+/* Abstract class (Shapes) */
+
+abstract class Shape {
+    abstract double area();
+}
+
+class Circle extends Shape {
+    double radius;
+    Circle(double radius) {
+        this.radius = radius;
+    }
+    @Override
+    double area() {
+        return Math.PI * radius * radius;
+    }
+}
+
+class Rectangle extends Shape {
+    double length, width;
+    Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+    @Override
+    double area() {
+        return length * width;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Shape circle = new Circle(5);
+        Shape rectangle = new Rectangle(4, 6);
+        System.out.println("Area of Circle: " + circle.area());
+        System.out.println("Area of Rectangle: " + rectangle.area());
+    }
+}
+
+/* Super Keyword */
+
+class Parent {
+    String name;
+    Parent(String name) {
+        this.name = name;
+    }
+}
+
+class Child extends Parent {
+    Child(String name) {
+        super(name);
+    }
+    void display() {
+        System.out.println("Name: " + name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child child = new Child("Ram");
+        child.display();
+    }
+}
+
+/* Interface */
+
+interface Animal {
+    void sound();
+}
+class Dog implements Animal {
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.sound();
+    }
+}
+
+/* Runtime Polymorphism */
+
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.sound();
+    }
+}
+
+/* Exception Handling */
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            int result = 10 / 0;
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Division by zero is not allowed.");
+        }       
+        System.out.println("Program continues...");
+    }
+}
+
+/* Multiple Catch clause */
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            int[] arr = {1, 2, 3};
+            System.out.println(arr[5]);
+            int result = 10 / 0;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Error: Array index is out of bounds.");
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Division by zero is not allowed.");
+        }
+        System.out.println("Program continues...");
+    }
+}
+
+/* Built-in */
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            int result = 10 / 0;
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Division by zero is not allowed.");
+        }       
+        System.out.println("Program continues...");
+    }
+}
+
+/* User Define Execption */
+
+class AgeException extends Exception {
+    public AgeException(String message) {
+        super(message);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        int age = 15;
+        try {
+            if (age < 18) {
+                throw new AgeException("Age must be 18 or older.");
+            }
+            else{
+                System.out.println("Age is valid.");
+            }
+        } catch (AgeException e) {
+            System.out.println(e);
+        }
+
+        System.out.println("Program continues...");
+    }
+}
+
+/* User Define Package */
+
+    // package file
+        package myPackage;
+        public class MyClass {
+            public void display() {
+                System.out.println("Hello from MyClass in myPackage!");
+            }
+        }
+
+    // main file
+    import myPackage.MyClass;
+    public class Main {
+        public static void main(String[] args) {
+            MyClass myClass = new MyClass();
+            myClass.display();
+        }
+    }
+    
