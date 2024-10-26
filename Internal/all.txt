@@ -22,6 +22,17 @@ public class DataTypes {
     }
 }
 
+Output:
+
+byte: 0
+short: 0
+int: 0
+float: 0.0
+double: 0.0
+long: 0
+boolean: false
+char: 
+
 /* Quadratic Roots */
 
 public class QuadraticRoots {
@@ -44,12 +55,18 @@ public class QuadraticRoots {
     }
 }
 
+Output:
+
+Roots are real and distinct.
+Root 1: -2.5
+Root 2: 0.0
+
 /* Binary Search */
 
 public class BinarySearch {
     public static void main(String[] args) {
-        int[] num = { 2, 5, 8, 12, 16, 23, 38, 45, 56, 72, 91 };
-        int key = 23;
+        int[] num = { 2, 4, 8, 16, 32, 64 };
+        int key = 32;
         int pos = binarySearch(num, key);
 
         if (pos != -1) {
@@ -78,6 +95,10 @@ public class BinarySearch {
     }
 }
 
+Output:
+
+Element found at index: 4
+
 /* Bubble Sort */
 
 public class BubbleSort {
@@ -98,6 +119,10 @@ public class BubbleSort {
     }
 }
 
+Output:
+
+11 12 22 25 34 64 90 
+
 /* String Buffer */
 
 public class Buffer {
@@ -110,6 +135,12 @@ public class Buffer {
         System.out.println("After insertion: " + stringBuffer);
     }
 }
+
+Output:
+
+Original: Hello World
+After deletion: Hello
+After insertion: Hello!
 
 /* Class Mechanism */
 
@@ -126,6 +157,9 @@ public class Main {
         System.out.println("Sum: " + result);
     }
 }
+
+Output:
+Sum: 15
 
 /* Method Overloading */
 
@@ -146,6 +180,10 @@ public class Main {
     }
 }
 
+Output:
+Sum of 5 and 10: 15
+Sum of 5, 10 and 15: 30
+
 /* Constructor  */
 
 class Greeting {
@@ -165,6 +203,9 @@ public class Over {
     }
 }
 
+Output:
+Name: hari
+
 /* Constructor Overloading */
 
 class Greeting {
@@ -182,10 +223,16 @@ class Greeting {
 
 public class Over {
     public static void main(String[] args) {
-        Greeting obj = new Greeting();
-        obj.display();
+        Greeting obj1 = new Greeting();
+        Greeting obj2 = new Greeting("Krish");
+        obj1.display();
+        obj2.display();
     }
 }
+
+Output:
+Name: hari
+Name: Krish
 
 /* Single Inheritance */
 
@@ -208,6 +255,10 @@ public class Main {
         myDog.bark();
     }
 }
+
+Output:
+Animal is eating.
+Dog is barking.
 
 /* Multilevel Inheritance */
 
@@ -237,6 +288,11 @@ public class Main {
         myPuppy.weep();
     }
 }
+
+Output:
+Animal is eating.
+Dog is barking.
+Puppy is weeping.
 
 /* Abstract class (Shapes) */
 
@@ -268,12 +324,16 @@ class Rectangle extends Shape {
 }
 public class Main {
     public static void main(String[] args) {
-        Shape circle = new Circle(5);
+        Shape circle = new Circle(10);
         Shape rectangle = new Rectangle(4, 6);
         System.out.println("Area of Circle: " + circle.area());
         System.out.println("Area of Rectangle: " + rectangle.area());
     }
 }
+
+Output:
+Area of Circle: 314.1592653589793
+Area of Rectangle: 24.0
 
 /* Super Keyword */
 
@@ -300,6 +360,9 @@ public class Main {
     }
 }
 
+Output:
+Name: Ram
+
 /* Interface */
 
 interface Animal {
@@ -316,6 +379,9 @@ public class Main {
         myDog.sound();
     }
 }
+
+Output:
+Dog barks
 
 /* Runtime Polymorphism */
 
@@ -337,6 +403,9 @@ public class Main {
     }
 }
 
+Output:
+Dog barks
+
 /* Exception Handling */
 
 public class Main {
@@ -345,10 +414,13 @@ public class Main {
             int result = 10 / 0;
         } catch (ArithmeticException e) {
             System.out.println("Error: Division by zero is not allowed.");
-        }       
-        System.out.println("Program continues...");
+        }
     }
 }
+
+Output:
+ERROR!
+Error: Division by zero is not allowed.
 
 /* Multiple Catch clause */
 
@@ -363,9 +435,13 @@ public class Main {
         } catch (ArithmeticException e) {
             System.out.println("Error: Division by zero is not allowed.");
         }
-        System.out.println("Program continues...");
     }
 }
+
+Output:
+ERROR!
+Error: Array index is out of bounds.
+
 
 /* Built-in */
 
@@ -375,10 +451,13 @@ public class Main {
             int result = 10 / 0;
         } catch (ArithmeticException e) {
             System.out.println("Error: Division by zero is not allowed.");
-        }       
-        System.out.println("Program continues...");
+        }
     }
 }
+
+Output:
+ERROR!
+Error: Division by zero is not allowed.
 
 /* User Define Execption */
 
@@ -401,10 +480,12 @@ public class Main {
         } catch (AgeException e) {
             System.out.println(e);
         }
-
-        System.out.println("Program continues...");
     }
 }
+
+Output:
+AgeException: Age must be 18 or older.
+
 
 /* User Define Package */
 
@@ -424,4 +505,6 @@ public class Main {
             myClass.display();
         }
     }
-    
+
+Output:
+Hello from MyClass in myPackage!
