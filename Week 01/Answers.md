@@ -1,6 +1,6 @@
 # Exercise – 1:
 
-> **Question a)** Write a JAVA program to display default value of all primitive data type of JAVA.
+> **a)** Write a JAVA program to display default value of all primitive data type of JAVA.
 
 ## code
 
@@ -43,7 +43,7 @@ boolean: false
 char:
 ```
 
-> **Question b)** Write a java program that display the roots of a quadratic equation ax2+bx=0. Calculate the
+> **b)** Write a java program that display the roots of a quadratic equation ax2+bx=0. Calculate the
 > discriminate D and basing on value of D, describe the nature of root.
 
 ## code
