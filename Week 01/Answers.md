@@ -2,9 +2,9 @@
 
 > **a)** Write a JAVA program to display default value of all primitive data type of JAVA.
 
-## code
+## Code
 
-```
+```java
 public class DataTypes {
 	static byte data_byte;
 	static short data_short;
@@ -43,12 +43,11 @@ boolean: false
 char:
 ```
 
-> **b)** Write a java program that display the roots of a quadratic equation ax2+bx=0. Calculate the
-> discriminate D and basing on value of D, describe the nature of root.
+> **b)** Write a java program that display the roots of a quadratic equation ax2+bx=0. Calculate the discriminate D and basing on value of D, describe the nature of root.
 
-## code
+## Code
 
-```
+```java
 import java.util.Scanner;
 
 public class QuadraticRoots2 {
