@@ -26,7 +26,7 @@ public class Search {
 		}
 		Arrays.sort(arr);
 
-		System.out.println("Enter the key: ");
+		System.out.print("Enter the key: ");
 		int key = sc.nextInt();
 
 		int pos = binarySearch(arr, 0, n - 1, key);

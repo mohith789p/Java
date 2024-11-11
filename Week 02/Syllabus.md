@@ -1,7 +1,12 @@
-Exercise - 2
+# Exercise - 2
 
-a) Write a JAVA program to search for an element in a given list of elements using binary search mechanism.
+### a) Binary Search
+Write a Java program to search for an element in a given list of elements using the binary search mechanism.
 
-b) Write a JAVA program to sort for an element in a given list of elements using bubble sort.
+### b) Bubble Sort
+Write a Java program to sort a given list of elements using the bubble sort algorithm.
 
-c) Write a JAVA program using String Buffer to delete, remove character. 
+### c) String Buffer Manipulation
+Write a Java program using `StringBuffer` to:
+- Delete a character
+- Remove a character

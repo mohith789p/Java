@@ -4,7 +4,7 @@ public class Buffer {
         System.out.println("Original: " + stringBuffer);
         stringBuffer.delete(5, 12);
         System.out.println("After deletion: " + stringBuffer);
-        stringBuffer.insert(5, "!");
-        System.out.println("After insertion: " + stringBuffer);
+        stringBuffer.deleteCharAt(4);
+        System.out.println("After Removing: " + stringBuffer);
     }
 }
