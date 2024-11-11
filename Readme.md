@@ -8,15 +8,15 @@ Welcome to the **JAVA Lab Exercises Repository**! This repository is organized b
 
 1. [Repository Structure](#-repository-structure)
 2. [Lab Syllabus](#-lab-syllabus)
-   - [Exercise 1: Introduction to Java Basics](#exercise-1-introduction-to-java-basics)
-   - [Exercise 2: Searching and Sorting](#exercise-2-searching-and-sorting)
-   - [Exercise 3: Classes and Constructors](#exercise-3-classes-and-constructors)
-   - [Exercise 4: Inheritance and Abstract Classes](#exercise-4-inheritance-and-abstract-classes)
-   - [Exercise 5: Keywords, Interfaces, and Polymorphism](#exercise-5-keywords-interfaces-and-polymorphism)
-   - [Exercise 6: Exception Handling](#exercise-6-exception-handling)
-   - [Exercise 7: Multithreading](#exercise-7-multithreading)
-   - [Exercise 8: Packages and GUI Basics](#exercise-8-packages-and-gui-basics)
-   - [Exercise 9: JDBC and Database Operations](#exercise--9-jdbc-and-database-operations)
+   - [Exercise 1: Introduction to Java Basics](#exercise--1-introduction-to-java-basics-%EF%B8%8F)
+   - [Exercise 2: Searching and Sorting](#exercise--2-searching-and-sorting-)
+   - [Exercise 3: Classes and Constructors](#exercise--3-classes-and-constructors-%EF%B8%8F)
+   - [Exercise 4: Inheritance and Abstract Classes](#exercise--4-inheritance-and-abstract-classes-)
+   - [Exercise 5: Keywords, Interfaces, and Polymorphism](#exercise--5-keywords-interfaces-and-polymorphism-)
+   - [Exercise 6: Exception Handling](#exercise--6-exception-handling-%EF%B8%8F)
+   - [Exercise 7: Multithreading](#exercise--7-multithreading-)
+   - [Exercise 8: Packages and GUI Basics](#exercise--8-packages-and-gui-basics-)
+   - [Exercise 9: JDBC and Database Operations](#exercise--9-jdbc-and-database-operations-%EF%B8%8F)
 
 ---
 
