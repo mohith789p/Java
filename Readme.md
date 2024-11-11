@@ -8,7 +8,7 @@ Welcome to the **JAVA Lab Exercises Repository**! This repository is organized b
 
 1. [Repository Structure](#-repository-structure)
 2. [Lab Syllabus](#-lab-syllabus)
-   - [Exercise 1: Introduction to Java Basics](#exercise-1-introduction-to-java-basics)
+   - [Exercise 1: Introduction to Java Basics](#exercise-1-introduction-to-java-basics-%EF%B8%8F)
    - [Exercise 2: Searching and Sorting](#exercise-2-searching-and-sorting)
    - [Exercise 3: Classes and Constructors](#exercise-3-classes-and-constructors)
    - [Exercise 4: Inheritance and Abstract Classes](#exercise-4-inheritance-and-abstract-classes)
