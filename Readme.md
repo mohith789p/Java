@@ -24,15 +24,15 @@ Welcome to the **JAVA Lab Exercises Repository**! This repository is organized b
 
 The repository is organized by week, with each folder containing Java programs and exercises as per the lab syllabus:
 
-- **[Week 01](./week%2001/)** - 🖥️ Basic Java Syntax and Data Types
-- **[Week 02](./week%2002/)** - 🔍 Searching and Sorting Algorithms
-- **[Week 03](./week%2003/)** - 🛠️ Classes, Constructors, and Method Overloading
-- **[Week 04](./week%2004/)** - 🧩 Inheritance and Abstract Classes
-- **[Week 05](./week%2005/)** - 🎭 Keywords, Interfaces, and Polymorphism
-- **[Week 06](./week%2006/)** - ⚠️ Exception Handling
-- **[Week 07](./week%2007/)** - 🔄 Multithreading
-- **[Week 08](./week%2008/)** - 📦 Packages and 🎨 GUI Basics
-- **[Week 09](./week%2009/)** - 🗄️ JDBC and Database Operations
+- **[Week 01](./Week%2001/)** - 🖥️ Basic Java Syntax and Data Types
+- **[Week 02](./Week%2002/)** - 🔍 Searching and Sorting Algorithms
+- **[Week 03](./Week%2003/)** - 🛠️ Classes, Constructors, and Method Overloading
+- **[Week 04](./Week%2004/)** - 🧩 Inheritance and Abstract Classes
+- **[Week 05](./Week%2005/)** - 🎭 Keywords, Interfaces, and Polymorphism
+- **[Week 06](./Week%2006/)** - ⚠️ Exception Handling
+- **[Week 07](./Week%2007/)** - 🔄 Multithreading
+- **[Week 08](./Week%2008/)** - 📦 Packages and 🎨 GUI Basics
+- **[Week 09](./Week%2009/)** - 🗄️ JDBC and Database Operations
 
 ---
 
